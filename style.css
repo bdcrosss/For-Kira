@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f6e7f6;
+    color: #403b38;
+    line-height: 1.7;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(circle at top left, #eac5e9, transparent 40%),
+        radial-gradient(circle at bottom right, #eeb9dc, transparent 40%),
+        #f4eaf7;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.small-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8d7989;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 85px);
+    font-weight: normal;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.intro {
+    font-size: 19px;
+    max-width: 500px;
+    margin: 0 auto 35px;
+    color: #716963;
+}
+
+button {
+    border: 1px solid #8d8179;
+    background: transparent;
+    padding: 13px 25px;
+    border-radius: 30px;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    cursor: pointer;
+    color: #403b38;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #403b38;
+    color: #f7f3ee;
+}
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 110px 30px;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9b8e85;
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+}
+
+.paper {
+    max-width: 700px;
+    background: #fffdf9;
+
+    padding: 60px;
+
+    box-shadow: 0 15px 40px rgba(60, 50, 45, 0.08);
+
+    border: 1px solid #e7ded7;
+}
+
+.paper h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.paper p {
+    margin-bottom: 20px;
+}
+
+.signature {
+    margin-top: 40px;
+    font-style: italic;
+}
+
+.photos {
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.photo-card {
+    background: #fffdf9;
+    padding: 12px;
+
+    box-shadow: 0 10px 30px rgba(60, 50, 45, 0.08);
+
+    transform: rotate(-1deg);
+
+    transition: 0.3s ease;
+}
+
+.photo-card:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+.photo-card:hover {
+    transform: rotate(0deg) translateY(-5px);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-card p {
+    padding: 15px 5px 8px;
+    font-style: italic;
+}
+
+.memories {
+    max-width: 850px;
+}
+
+.memory-list {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.memory {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 25px;
+
+    border-top: 1px solid #d8cec6;
+    padding-top: 25px;
+}
+
+.memory span {
+    font-size: 14px;
+    color: #9b8e85;
+}
+
+.memory h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.memory p {
+    color: #716963;
+}
+
+.goodbye {
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: #e9d7e6;
+}
+
+.goodbye h2 {
+    font-size: clamp(38px, 7vw, 70px);
+    line-height: 1.1;
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+.goodbye p {
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+
+    font-size: 13px;
+    color: #8d8179;
+}
+
+.playlist {
+    text-align: center;
+}
+
+.playlist-intro {
+    max-width: 550px;
+    margin: -25px auto 35px;
+    color: #716963;
+}
+
+.spotify-player {
+    max-width: 700px;
+    margin: 0 auto 25px;
+
+    background: #fffdf9;
+    padding: 10px;
+
+    box-shadow: 0 15px 40px rgba(60, 50, 45, 0.08);
+}
+
+.spotify-button {
+    display: inline-block;
+
+    padding: 13px 26px;
+
+    border: 1px solid #8d8179;
+    border-radius: 30px;
+
+    text-decoration: none;
+    color: #403b38;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+.spotify-button:hover {
+    background: #403b38;
+    color: #f7f3ee;
+}
+
+@media (max-width: 650px) {
+
+    .section {
+        padding: 80px 20px;
+    }
+
+    .paper {
+        padding: 35px 25px;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-card img {
+        height: 400px;
+    }
+
+    .memory {
+        grid-template-columns: 40px 1fr;
+        gap: 15px;
+    }
+
+}
